@@ -21,7 +21,6 @@ public abstract class CameraMixin {
     @Inject(method = "setup", at = @At("RETURN"))
     private void attachCameraToHead(BlockGetter level, Entity entity, boolean detached, boolean thirdPersonReverse, float partialTick, CallbackInfo ci) {
         if (entity instanceof Player player && player.getData(ModAttachments.IS_RAGDOLL)) {
-            // Head vector offset calculation (Replace this vector with active ragdoll head bone position later)
             Vec3 headPos = player.getEyePosition(partialTick);
             this.setPosition(headPos);
         }

@@ -1,11 +1,7 @@
-package com.example.myragdoll.client;
+package com.example.myragdoll;
 
-import com.example.myragdoll.ModAttachments;
-import com.example.myragdoll.MyRagdoll;
-import com.example.myragdoll.network.ToggleRagdollPayload;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -33,7 +29,6 @@ public class ClientEvents {
 
         if (player == null || !player.getData(ModAttachments.IS_RAGDOLL)) return;
 
-        // Allows normal mouse rotation yaw & pitch without forcing target entity rotation
         event.setYaw(mc.player.getYRot());
         event.setPitch(mc.player.getXRot());
     }

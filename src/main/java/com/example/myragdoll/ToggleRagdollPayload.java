@@ -1,7 +1,5 @@
-package com.example.myragdoll.network;
+package com.example.myragdoll;
 
-import com.example.myragdoll.ModAttachments;
-import com.example.myragdoll.MyRagdoll;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;

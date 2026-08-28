@@ -1,6 +1,5 @@
 package com.example.myragdoll;
 
-import com.example.myragdoll.network.ToggleRagdollPayload;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;

@@ -1,6 +1,5 @@
-package com.example.myragdoll.client;
+package com.example.myragdoll;
 
-import com.example.myragdoll.MyRagdoll;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.neoforged.api.distmarker.Dist;
